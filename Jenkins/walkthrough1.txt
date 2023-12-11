@@ -1,1 +1,11 @@
 test
+
+20.9.56.132
+
+ssh jenkin@20.9.56.132
+
+ssh senthilraj@40.78.140.83
+senthlraj
+alliswell@123
+
+allis
