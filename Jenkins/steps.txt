@@ -10,4 +10,8 @@ lsb_release -r
 
 Release:        22.04
 
+https://pkg.jenkins.io/debian/
+
+
+
 
