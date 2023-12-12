@@ -13,5 +13,15 @@ Release:        22.04
 https://pkg.jenkins.io/debian/
 
 
+sudo systemctl status jenkins
+sudo systemctl enable jenkins
+
+ssh jenkin@20.9.56.132
+
+20.9.56.132:8080
+
+
+
+
 
 
