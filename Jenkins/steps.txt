@@ -34,6 +34,27 @@ We need to be careful once it is filled, you cannot edit.
 
 t
 
+Execute Bash from Job
+
+cd tmp
+vi testscript.sh
+INSERT
+
+echo "I am $Name, and I am $Age
+ls -lrt
+chmod 755 testscript.sh
+-- validate with ls lrt
+./testscript.sh Raj 22
+vi testscript.sh
+
+Name=$1
+Age=$2
+echo "Hello I am $Name, and I am $Age years old."
+
+./testscript.sh Raj 22
+
+
+
 
 
 
