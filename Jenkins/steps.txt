@@ -19,6 +19,20 @@ sudo systemctl enable jenkins
 ssh jenkin@20.9.56.132
 
 20.9.56.132:8080
+VM IP
+http://20.9.56.132:8080
+
+Network IP
+
+40.78.140.83:8080
+
+Install plugins
+
+Create First Admin user
+
+We need to be careful once it is filled, you cannot edit.
+
+
 
 
 
