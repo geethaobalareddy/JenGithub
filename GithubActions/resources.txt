@@ -1,0 +1,2 @@
+https://code.visualstudio.com/docs/sourcecontrol/github
+https://git-scm.com/docs/git-config
