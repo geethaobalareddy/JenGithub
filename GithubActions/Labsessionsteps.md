@@ -21,8 +21,8 @@ npm test
 Create git init
 
 
-git remote add origin https://trng.user01@hotmail.com@github.com/aavtraining/reactdemo.git
-git remote add origin https://trng.user01@github.com/aavtraining/reactdemo.git
+git remote add origin https://github.com/aavtraining/test.git
+git remote add origin 
 
 provide the browser pop in and provide the credentials to authenticate the user
 
@@ -30,6 +30,27 @@ git push --set-upstream origin master
 
 
 test
+
+
+https://github.com/aavtraining/deployment.git
+
+git remote add origin https://github.com/aavtraining/deployment.git
+
+
+…or create a new repository on the command line
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/aavtraining/test.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/aavtraining/test.git
+git branch -M main
+git push -u origin main
 
 
 
