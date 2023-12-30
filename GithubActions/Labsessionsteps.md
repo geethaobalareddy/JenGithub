@@ -8,4 +8,14 @@ Open the Github action folder
 name the github action as first github action
 Add the following yml script 
 
+#node JS project manual setup
+ls
+cd GithubActions/Lab/Section3-GHAction/02StartingProject/02StartingProject/
+npm install
+npm run dev
+npm test
+
+
+
+
 
