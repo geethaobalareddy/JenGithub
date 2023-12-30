@@ -21,11 +21,15 @@ npm test
 Create git init
 
 
+git remote add origin https://trng.user01@hotmail.com@github.com/aavtraining/reactdemo.git
 git remote add origin https://trng.user01@github.com/aavtraining/reactdemo.git
 
 provide the browser pop in and provide the credentials to authenticate the user
 
 git push --set-upstream origin master
+
+
+test
 
 
 
