@@ -1,4 +1,16 @@
+
+Know about Lab machine, Azure Pass and Jenkins machine
+
+Setup a Github account
+Setup a Microsoft hotmail account 
+Using Microsoft account login Azure Pass and claim the azure Pass
+
+
+
+Create Jenkins machine using Azure PaaS
 Azure - Ubuntu 22 version
+
+
 
 
 sudo apt-get update
