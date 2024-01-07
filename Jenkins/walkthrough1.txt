@@ -1,12 +1,5 @@
-test
 
-20.9.56.132
-
-ssh jenkin@20.9.56.132
-
-ssh senthilraj@40.78.140.83
-senthlraj
-alliswell@123
+ssh labuser1@172.202.72.133
 
 allis
 ssh senthilraj@40.78.140.83
@@ -22,4 +15,44 @@ fdafdas@32LKfdfa
 
 
 Jenkin URL : http://40.78.140.83:8080/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test
+
+20.9.56.132
+
+ssh jenkin@20.9.56.132
+
+ssh senthilraj@40.78.140.83
+senthlraj
+alliswell@123
+
+
 

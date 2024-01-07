@@ -1,32 +1,15 @@
 
-Know about Lab machine, Azure Pass and Jenkins machine
-
-Setup a Github account
-Setup a Microsoft hotmail account 
-Using Microsoft account login Azure Pass and claim the azure Pass
-
-
-
-Create Jenkins machine using Azure PaaS
-Azure - Ubuntu 22 version
 
 
 
 
-sudo apt-get update
-sudo apt-get install openjdk-11-jdk
-
-Jenkins - Download section
-
-lsb_release -r
-
-Release:        22.04
-
-https://pkg.jenkins.io/debian/
 
 
-sudo systemctl status jenkins
-sudo systemctl enable jenkins
+
+
+
+
+
 
 ssh jenkin@20.9.56.132
 
