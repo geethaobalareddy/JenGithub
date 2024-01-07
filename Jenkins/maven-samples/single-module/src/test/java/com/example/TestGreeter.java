@@ -25,6 +25,17 @@ public class TestGreeter {
     assertTrue(true);
   }
 
+
+  @Test
+  public void intendfail2() {
+    assertTrue(true);
+  }
+
+  @Test
+  public void intendfail3() {
+    assertTrue(true);
+  }
+
   @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
     String someone = "World";
