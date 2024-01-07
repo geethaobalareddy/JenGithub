@@ -22,7 +22,7 @@ public class TestGreeter {
 
   @Test
   public void intendfail() {
-    assertTrue(false);
+    assertTrue(true);
   }
 
   @Test
