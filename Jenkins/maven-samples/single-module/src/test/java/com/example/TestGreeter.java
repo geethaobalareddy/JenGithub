@@ -21,11 +21,8 @@ public class TestGreeter {
   }
 
   @Test
-  public void greetShouldIncludeTheOneBeingGreetednewone() {
-    String someone = "World";
-    String someother = "negative";
-
-    assertThat(greeter.greet(someone), containsString(someother));
+  public void intendfail() {
+    assertTrue(false);
   }
 
   @Test
@@ -45,7 +42,7 @@ public class TestGreeter {
 
     @Test
   public void greetShouldIncludeGreetingMessage() {
-    String someone = "Wo";
+    String someone = "World, Thanks you making me Happy";
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
