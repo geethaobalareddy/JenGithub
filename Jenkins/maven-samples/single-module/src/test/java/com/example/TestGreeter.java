@@ -23,8 +23,9 @@ public class TestGreeter {
   @Test
   public void greetShouldIncludeTheOneBeingGreetednewone() {
     String someone = "World";
+    String someother = "negative";
 
-    assertThat(greeter.greet(someone), containsInteger(someone));
+    assertThat(greeter.greet(someone), containsString(someother));
   }
 
   @Test
