@@ -27,6 +27,7 @@ Open VS Code
 Open the VS Code Terminal
 Connect the newly created Ubuntu machine using following commmand
     ssh labuser1@172.202.72.133
+    TestTest@45677
 
 
 
@@ -120,8 +121,114 @@ To trigger the build every Monday at 8:00 AM:
 You can customize the schedule based on your specific needs using the cron syntax. Adjust the values in the cron expression to match your desired schedule.
 
 ###############################################################
-Execute script from Jenkins
+Execute bash script from Jenkins job
 ###############################################################
+
+---------------
+Insert Mode:
+
+Once in insert mode, you can start typing your text as you would in any other text editor.
+To exit insert mode and return to normal mode, press the Esc key.
+Here's a summary of the steps:
+
+To Insert Text:
+
+Press i to enter insert mode.
+Start typing your text.
+To Save Changes and Exit:
+
+Press Esc to exit insert mode and return to normal mode.
+Type :wq and press Enter to save changes and exit.
+To Exit Without Saving:
+
+Press Esc to exit insert mode and return to normal mode.
+Type :q! and press Enter to exit without saving.
+To Save Changes (in Normal Mode):
+
+Press Esc to ensure you are in normal mode.
+Type :w and press Enter to save changes.
+To Switch to Command-Line Mode:
+
+Press Esc to ensure you are in normal mode.
+Type : to enter command-line mode.
+
+---------------
+Shell script..
+Create SSH connect 
+    ssh labuser1@172.202.72.133
+    TestTest@45677
+    sudo i 
+create tmp director create testscript.
+mkdir tmp
+cd tmp
+vi testscript.sh
+INSERT
+echo "I am $Name, and I am $Age
+ls -lrt
+Modify permission of the file.
+chmod 755 testscript.sh
+-- validate with 
+ls lrt
+./testscript.sh Raj 22
+vi testscript.sh
+
+Name=$1
+Age=$2
+echo "Hello I am $Name, and I am $Age years old."
+
+Execute the script from Free style job
+name=Souraj
+age=12
+/tmp/testscript.sh $name $age
+
+---------------
+
+Parameterized job 
+
+---------------
+
+Go to configure job
+Enable - This project is parameterized
+Add - String parameter
+    name
+    default value
+Add - String parameter
+    age
+    default value
+
+Build steps.. use the following script.
+/tmp/testscript.sh $name $age
+
+---------
+Parameterised Job - deep
+----------
+
+Exercise - add a boolean variable - create a script based on boolean value true or false it decides the visibility.
+
+
+----------
+###############################################################
+Building application with freestyle jobs
+###############################################################
+
+Manually building the application
+Steps
+Download the application
+
+Maven sample available in the Github
+Check in the Jenkins git availability.
+git --version
+
+git clone -b main https://github.com/aavtraining/JenGithub.git
+
+
+
+
+
+
+
+
+
 
 
 
