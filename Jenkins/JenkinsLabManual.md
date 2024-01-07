@@ -220,8 +220,17 @@ Check in the Jenkins git availability.
 git --version
 
 git clone -b main https://github.com/aavtraining/JenGithub.git
+cd /JenGithub/Jenkins/maven-samples/single-module
+ mvn --version
+-- root user
 
+ sudo su -
+ sudo apt-get install maven -y
+ mvn --version
 
+ maven life cycle phases
+ mvn validate
+ mvn compile
 
 
 
