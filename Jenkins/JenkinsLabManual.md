@@ -224,6 +224,9 @@ cd /JenGithub/Jenkins/maven-samples/single-module
  mvn --version
 -- root user
 
+https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+
  sudo su -
  sudo apt-get install maven -y
  mvn --version
@@ -231,6 +234,89 @@ cd /JenGithub/Jenkins/maven-samples/single-module
  maven life cycle phases
  mvn validate
  mvn compile
+ mvn test
+ mvn clean install
+
+ We have successfully validated and installed the Java project with Maven, manully, next we are going to perform the same using Jenkins.
+
+
+###############################################################
+Automate the above application build using Jenkins
+###############################################################
+
+Create a new free style job with name first_java_app
+Go to configuration.
+Source code manager
+Git
+Provide Git repo URL in the Job config page.
+change the branch name as main from master as we are using main branch.
+Save and run the build to validate the code is fetching as expected.
+
+Next .. go to configure build..
+In the build steps
+Invoke top-level Maven targets
+In the Goals - clean package
+
+--- you can see .. not able to access Pom.xml
+
+next using build steps execute as a shell command, again it get fialed..
+mvn clean install
+
+why
+
+need to provide workspace location..
+all the execution happens in the workspace ..
+
+cd $WORKSPACE
+cd JenGithub/Jenkins/maven-samples/single-module
+pwd
+ls
+mvn clean install
+
+
+
+we are facing issue with above configuration, going one step ahead changing the path as given below.
+
+cd $WORKSPACE/Jenkins/maven-samples/single-module
+pwd
+ls
+mvn clean install
+
+We can see the build get succeeded, first build it takes more time, second build fraction of time it completes.
+
+---- Next we can do the same with invoke with maven target option.
+
+Add build step
+Maven
+
+Clean install
+Configure - Jenkins/maven-samples/single-module/pom.xml
+
+Jenkins/maven-samples/single-module/pom.xml
+
+You can validate both the build happens.
+
+----
+Archive the artifacts
+--------
+
+Would like to take the artifacts in the artifact location
+In post build action -> Choose the Archieve the artifacts -> Jenkins/maven-samples/single-module/target/*.jar
+Run the build and see the jar file get archieved.
+Artifacts are listed as part of the job
+-----
+Test Results
+-----
+Would like to take the test results in the  location
+In post build action -> Choose the Archieve the artifacts -> Jenkins/maven-samples/single-module/target/*.jar
+Run the build and see the jar file get archieved.
+Artifacts are listed as part of the job
+
+
+
+
+
+
 
 
 
