@@ -308,7 +308,7 @@ Artifacts are listed as part of the job
 Test Results
 -----
 Would like to take the test results in the  location
-In post build action -> Choose the Archieve the artifacts -> Jenkins/maven-samples/single-module/target/*.jar
+In post build action -> Choose the Test result publishing -> Jenkins/maven-samples/single-module/target/*.jar
 Run the build and see the jar file get archieved.
 Artifacts are listed as part of the job
 
