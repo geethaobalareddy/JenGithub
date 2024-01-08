@@ -312,6 +312,69 @@ In post build action -> Choose the Test result publishing -> Jenkins/maven-sampl
 Run the build and see the jar file get archieved.
 Artifacts are listed as part of the job
 
+-----
+Test Results trends
+-----
+Test trend - make the additional test case..
+adding negative unit test scenario and observe..
+
+Jenkins\maven-samples\single-module\src\test\java\com\TestGreeter.java
+
+  @Test
+  public void intendfail() {
+    assertTrue(true);
+  }
+
+
+  @Test
+  public void intendfail2() {
+    assertTrue(true);
+  }
+
+  @Test
+  public void intendfail3() {
+    assertTrue(true);
+  }
+
+  run the job - notice the test trend are changing..
+
+-----
+Long running job
+-----
+Initial run 4.5
+
+
+Open the steps - execute shell
+sleep 5m
+sleep 5m
+Go to the console output - stop the job - confirm yes.. 
+
+-----
+Build triggers
+-----
+
+Build trigger remotely - using xml script
+Build after other project build
+Build periodically
+Git hook trigger
+Poll scm
+
+
+Poll scm
+
+    Schedule - cron job 
+        Poll frequency
+        * * * * *
+        every minute
+Build trigger remotely - using xml script
+Build after other project build
+Build periodically
+Git hook trigger
+
+
+
+
+
 
 
 
