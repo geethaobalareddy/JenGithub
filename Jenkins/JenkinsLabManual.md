@@ -366,9 +366,20 @@ Poll scm
         Poll frequency
         * * * * *
         every minute
-Build trigger remotely - using xml script
-Build after other project build
+        0 * * * *
+        Hourly
+
+
 Build periodically
+    Define the schedule for the cron job
+    every two minutes
+    H/2 * * * *
+
+Build after other project build
+
+
+Build trigger remotely - using xml script
+
 Git hook trigger
 
 
