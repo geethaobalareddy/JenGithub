@@ -376,11 +376,33 @@ Build periodically
     H/2 * * * *
 
 Build after other project build
+    Select build triggers
+    Select Build after other projects are built
+    Provide other existing job:    firstfreestyle, 
 
 
-Build trigger remotely - using xml script
 
-Git hook trigger
+###############################################################
+Jenkins plugin
+###############################################################
+
+setup a new server and jenkins installation with out jenkins plugin..
+install and use new plugin ..and use it..
+
+Jenkins - CI - CD
+
+Standard approach - Freestyle job - shell script - manual plugin setup
+Portal script - freestyle job, scripted steps, offline plugin setup
+Self container - selfcontained, pipeline as job, declarative pipeline.
+
+
+Steps
+create new VM for plugin - create a jenkins instance
+
+VM name : jenkinsplugin
+
+    Provide your username : labuser1
+    Provide password : TestTest@45677
 
 
 
